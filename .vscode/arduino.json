@@ -1,0 +1,4 @@
+{
+    "board": "arduino:avr:unowifi",
+    "sketch": "inverter1\\invterter1.ino"
+}
