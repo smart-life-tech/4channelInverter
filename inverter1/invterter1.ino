@@ -1,6 +1,7 @@
 #define F_CPU 16000000        // Set the clock frequency
 #define PORTB_MASK 0b00001111 // Mask to set only the lower four bits of PORTB
 #define PORTD_MASK 0b11110000 // Mask to set only the upper four bits of PORTD
+#define PORTB_MASK2 0b00001010 // Mask to set only the lower four bits of PORTB
 int period =8325;// 60 hz perod
 #include <avr/io.h>
 #include <util/delay.h>
@@ -15,7 +16,7 @@ int main(void)
     while (1)
     {
         // Toggle the lower four bits of PORTB
-        PORTB ^= PORTB_MASK;
+        PORTB ^= PORTB_MASK2;
         // Toggle the upper four bits of PORTD
         PORTD ^= PORTD_MASK;
 
