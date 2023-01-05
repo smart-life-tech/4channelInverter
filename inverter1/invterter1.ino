@@ -16,7 +16,7 @@ int main(void)
     while (1)
     {
         // Toggle the lower four bits of PORTB
-        PORTB ^= PORTB_MASK2;
+        PORTB ^= PORTB_MASK;
         // Toggle the upper four bits of PORTD
         PORTD ^= PORTD_MASK;
 
