@@ -20,7 +20,7 @@ int main(void)
         PORTD ^= PORTD_MASK;
 
             // Delay for a period of 1/60 kHz = 16.7 us
-            _delay_us(16.7);
+            _delay_us(0.033);
     }
 
     return 0; // This line is never reached
