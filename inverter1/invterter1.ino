@@ -2,7 +2,7 @@
 #define PORTB_MASK 0b00001111 // Mask to set only the lower four bits of PORTB
 #define PORTD_MASK 0b11110000 // Mask to set only the upper four bits of PORTD
 #define PORTB_MASK2 0b00001010 // Mask to set only the lower four bits of PORTB
-int period =0.6;// 60 hz perod
+int period =8300;// 60 hz perod
 #include <avr/io.h>
 #include <util/delay.h>
 
